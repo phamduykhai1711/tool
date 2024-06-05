@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<discovery xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.xmlsoap.org/disco/">
+  <contractRef ref="http://hoadon.doji.vn/Service/iv_v/service_ketnoi.asmx?wsdl" docRef="http://hoadon.doji.vn/Service/iv_v/service_ketnoi.asmx" xmlns="http://schemas.xmlsoap.org/disco/scl/" />
+  <soap address="http://hoadon.doji.vn/Service/iv_v/service_ketnoi.asmx" xmlns:q1="http://tempuri.org/" binding="q1:service_ketnoiSoap" xmlns="http://schemas.xmlsoap.org/disco/soap/" />
+  <soap address="http://hoadon.doji.vn/Service/iv_v/service_ketnoi.asmx" xmlns:q2="http://tempuri.org/" binding="q2:service_ketnoiSoap12" xmlns="http://schemas.xmlsoap.org/disco/soap/" />
+</discovery>

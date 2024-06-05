@@ -1,0 +1,1074 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="Fs_SERVICE_HD_NH">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="b_nsd" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="b_mk" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="b_loai" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="b_so_id" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="hoadon" nillable="true" type="tns:hoadon_gtgt" />
+            <s:element minOccurs="0" maxOccurs="1" name="hoadon_ct" type="tns:ArrayOfHoadon_gtgt_ct" />
+            <s:element minOccurs="0" maxOccurs="1" name="b_ktra_dch" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="hoadon_gtgt">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="key" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="linktracuu" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ma" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ng_hd" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="seri" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ma_nthue" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="kieu_so" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ma_kh" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ten" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="phone" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="tax" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="dchi" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ma_tk" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ten_nh" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="mailH" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="phoneH" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="tenM" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ma_khL" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ma_nt" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="tg" type="s:double" />
+          <s:element minOccurs="0" maxOccurs="1" name="hthuc" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="han" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="tl_ggia" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ggia" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="phi" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="noidung" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="tien" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ttoan" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ptien_vc" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="quay" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ten_quay" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="hinhthuc_gui" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="unbounded" name="hoadon_gtgt_ct" type="tns:hoadon_gtgt_ct" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="hoadon_gtgt_ct">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="ma_vt" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="TEN" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="dvt" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="luong" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="gia" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="tien" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ts" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="thue" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ttoan" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="them1" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="them2" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="them3" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="nd" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="tl_ck" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="tien_ck" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="tuoivang" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="trongluong" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="tiencong" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ma_barcode" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfHoadon_gtgt_ct">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="hoadon_gtgt_ct" nillable="true" type="tns:hoadon_gtgt_ct" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="Fs_SERVICE_HD_NHResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Fs_SERVICE_HD_NHResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Fs_IV_MAP_NH">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="b_nsd" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="b_mk" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="b_so_id" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="b_fkey" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Fs_IV_MAP_NHResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Fs_IV_MAP_NHResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Fs_SERVICE_NH_KY">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="b_nsd" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="b_mk" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="b_loai" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="b_so_id" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="hoadon" nillable="true" type="tns:hoadon_gtgt" />
+            <s:element minOccurs="0" maxOccurs="1" name="hoadon_ct" type="tns:ArrayOfHoadon_gtgt_ct" />
+            <s:element minOccurs="0" maxOccurs="1" name="b_ktra_dch" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Fs_SERVICE_NH_KYResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Fs_SERVICE_NH_KYResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Fs_SERVICE_NH">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="b_nsd" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="b_mk" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="b_loai" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="b_so_id" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="hoadon" nillable="true" type="tns:hoadon_gtgt" />
+            <s:element minOccurs="0" maxOccurs="1" name="hoadon_ct" type="tns:ArrayOfHoadon_gtgt_ct" />
+            <s:element minOccurs="0" maxOccurs="1" name="b_ktra_dch" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Fs_SERVICE_NHResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Fs_SERVICE_NHResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Fs_SERVICE_INVOICE_NH">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="b_nsd" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="b_mk" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="b_loai" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="b_so_id" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="shoadon" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="shoadon_ct" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="b_ktra_dch" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Fs_SERVICE_INVOICE_NHResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Fs_SERVICE_INVOICE_NHResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Fs_SERVICE_INVOICE_MUTI_NH">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="b_nsd" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="b_mk" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sloai" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="shoadon" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Fs_SERVICE_INVOICE_MUTI_NHResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Fs_SERVICE_INVOICE_MUTI_NHResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Fs_SERVICE_INVOICE_IN">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="b_nsd" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="b_mk" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="b_soid" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="loai_in" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Fs_SERVICE_INVOICE_INResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Fs_SERVICE_INVOICE_INResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Fs_SERVICE_INVOICE_IN_FKEY">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="b_nsd" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="b_mk" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="b_key" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="loai_in" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Fs_SERVICE_INVOICE_IN_FKEYResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Fs_SERVICE_INVOICE_IN_FKEYResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Fs_SERVICE_INVOICE_HUY">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="b_nsd" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="b_mk" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="b_soid" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Fs_SERVICE_INVOICE_HUYResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Fs_SERVICE_INVOICE_HUYResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Fs_SERVICE_INVOICE_HUY_FKEY">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="b_nsd" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="b_mk" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="b_key" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Fs_SERVICE_INVOICE_HUY_FKEYResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Fs_SERVICE_INVOICE_HUY_FKEYResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Fs_SERVICE_INVOICE_CT">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="b_nsd" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="b_mk" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="b_so_id" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Fs_SERVICE_INVOICE_CTResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Fs_SERVICE_INVOICE_CTResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Fs_USER_TT">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="b_ma_login" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="b_loai" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Fs_USER_TTResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Fs_USER_TTResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Fs_IV_MA_FKEY">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="b_nsd" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="b_mk" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="b_ma" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="b_seri" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="b_soc" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Fs_IV_MA_FKEYResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Fs_IV_MA_FKEYResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Fs_SERVICE_INVOICE_KEY_CT">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="b_nsd" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="b_mk" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="b_key" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Fs_SERVICE_INVOICE_KEY_CTResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Fs_SERVICE_INVOICE_KEY_CTResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Fs_SERVICE_INVOICE_KEY_CT_XML">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="b_nsd" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="b_mk" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="b_key" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Fs_SERVICE_INVOICE_KEY_CT_XMLResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Fs_SERVICE_INVOICE_KEY_CT_XMLResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Fs_SERVICE_IMPORT_DENSO">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="b_nsd" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="b_mk" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sloai" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sma" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="skyhieu" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="shoadon" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Fs_SERVICE_IMPORT_DENSOResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Fs_SERVICE_IMPORT_DENSOResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Fs_LoadListMau">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="b_nsd" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="b_mk" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sloai" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Fs_LoadListMauResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Fs_LoadListMauResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Fs_LoadListSeri">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="b_nsd" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="b_mk" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sMau" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Fs_LoadListSeriResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Fs_LoadListSeriResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Fs_SERVICE_KY_SERVER">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="b_nsd" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="b_mk" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="b_so_id" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Fs_SERVICE_KY_SERVERResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Fs_SERVICE_KY_SERVERResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Fs_SERVICE_KY_MUTIL_SERVER">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="b_nsd" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="b_mk" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="b_chuoi_so_id" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Fs_SERVICE_KY_MUTIL_SERVERResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Fs_SERVICE_KY_MUTIL_SERVERResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Fs_DN_CT">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="b_nsd" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="b_mk" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="b_tax" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Fs_DN_CTResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Fs_DN_CTResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TOOL_SENDMAIL">
+        <s:complexType />
+      </s:element>
+      <s:element name="TOOL_SENDMAILResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TOOL_SENDMAILResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="Fs_SERVICE_HD_NHSoapIn">
+    <wsdl:part name="parameters" element="tns:Fs_SERVICE_HD_NH" />
+  </wsdl:message>
+  <wsdl:message name="Fs_SERVICE_HD_NHSoapOut">
+    <wsdl:part name="parameters" element="tns:Fs_SERVICE_HD_NHResponse" />
+  </wsdl:message>
+  <wsdl:message name="Fs_IV_MAP_NHSoapIn">
+    <wsdl:part name="parameters" element="tns:Fs_IV_MAP_NH" />
+  </wsdl:message>
+  <wsdl:message name="Fs_IV_MAP_NHSoapOut">
+    <wsdl:part name="parameters" element="tns:Fs_IV_MAP_NHResponse" />
+  </wsdl:message>
+  <wsdl:message name="Fs_SERVICE_NH_KYSoapIn">
+    <wsdl:part name="parameters" element="tns:Fs_SERVICE_NH_KY" />
+  </wsdl:message>
+  <wsdl:message name="Fs_SERVICE_NH_KYSoapOut">
+    <wsdl:part name="parameters" element="tns:Fs_SERVICE_NH_KYResponse" />
+  </wsdl:message>
+  <wsdl:message name="Fs_SERVICE_NHSoapIn">
+    <wsdl:part name="parameters" element="tns:Fs_SERVICE_NH" />
+  </wsdl:message>
+  <wsdl:message name="Fs_SERVICE_NHSoapOut">
+    <wsdl:part name="parameters" element="tns:Fs_SERVICE_NHResponse" />
+  </wsdl:message>
+  <wsdl:message name="Fs_SERVICE_INVOICE_NHSoapIn">
+    <wsdl:part name="parameters" element="tns:Fs_SERVICE_INVOICE_NH" />
+  </wsdl:message>
+  <wsdl:message name="Fs_SERVICE_INVOICE_NHSoapOut">
+    <wsdl:part name="parameters" element="tns:Fs_SERVICE_INVOICE_NHResponse" />
+  </wsdl:message>
+  <wsdl:message name="Fs_SERVICE_INVOICE_MUTI_NHSoapIn">
+    <wsdl:part name="parameters" element="tns:Fs_SERVICE_INVOICE_MUTI_NH" />
+  </wsdl:message>
+  <wsdl:message name="Fs_SERVICE_INVOICE_MUTI_NHSoapOut">
+    <wsdl:part name="parameters" element="tns:Fs_SERVICE_INVOICE_MUTI_NHResponse" />
+  </wsdl:message>
+  <wsdl:message name="Fs_SERVICE_INVOICE_INSoapIn">
+    <wsdl:part name="parameters" element="tns:Fs_SERVICE_INVOICE_IN" />
+  </wsdl:message>
+  <wsdl:message name="Fs_SERVICE_INVOICE_INSoapOut">
+    <wsdl:part name="parameters" element="tns:Fs_SERVICE_INVOICE_INResponse" />
+  </wsdl:message>
+  <wsdl:message name="Fs_SERVICE_INVOICE_IN_FKEYSoapIn">
+    <wsdl:part name="parameters" element="tns:Fs_SERVICE_INVOICE_IN_FKEY" />
+  </wsdl:message>
+  <wsdl:message name="Fs_SERVICE_INVOICE_IN_FKEYSoapOut">
+    <wsdl:part name="parameters" element="tns:Fs_SERVICE_INVOICE_IN_FKEYResponse" />
+  </wsdl:message>
+  <wsdl:message name="Fs_SERVICE_INVOICE_HUYSoapIn">
+    <wsdl:part name="parameters" element="tns:Fs_SERVICE_INVOICE_HUY" />
+  </wsdl:message>
+  <wsdl:message name="Fs_SERVICE_INVOICE_HUYSoapOut">
+    <wsdl:part name="parameters" element="tns:Fs_SERVICE_INVOICE_HUYResponse" />
+  </wsdl:message>
+  <wsdl:message name="Fs_SERVICE_INVOICE_HUY_FKEYSoapIn">
+    <wsdl:part name="parameters" element="tns:Fs_SERVICE_INVOICE_HUY_FKEY" />
+  </wsdl:message>
+  <wsdl:message name="Fs_SERVICE_INVOICE_HUY_FKEYSoapOut">
+    <wsdl:part name="parameters" element="tns:Fs_SERVICE_INVOICE_HUY_FKEYResponse" />
+  </wsdl:message>
+  <wsdl:message name="Fs_SERVICE_INVOICE_CTSoapIn">
+    <wsdl:part name="parameters" element="tns:Fs_SERVICE_INVOICE_CT" />
+  </wsdl:message>
+  <wsdl:message name="Fs_SERVICE_INVOICE_CTSoapOut">
+    <wsdl:part name="parameters" element="tns:Fs_SERVICE_INVOICE_CTResponse" />
+  </wsdl:message>
+  <wsdl:message name="Fs_USER_TTSoapIn">
+    <wsdl:part name="parameters" element="tns:Fs_USER_TT" />
+  </wsdl:message>
+  <wsdl:message name="Fs_USER_TTSoapOut">
+    <wsdl:part name="parameters" element="tns:Fs_USER_TTResponse" />
+  </wsdl:message>
+  <wsdl:message name="Fs_IV_MA_FKEYSoapIn">
+    <wsdl:part name="parameters" element="tns:Fs_IV_MA_FKEY" />
+  </wsdl:message>
+  <wsdl:message name="Fs_IV_MA_FKEYSoapOut">
+    <wsdl:part name="parameters" element="tns:Fs_IV_MA_FKEYResponse" />
+  </wsdl:message>
+  <wsdl:message name="Fs_SERVICE_INVOICE_KEY_CTSoapIn">
+    <wsdl:part name="parameters" element="tns:Fs_SERVICE_INVOICE_KEY_CT" />
+  </wsdl:message>
+  <wsdl:message name="Fs_SERVICE_INVOICE_KEY_CTSoapOut">
+    <wsdl:part name="parameters" element="tns:Fs_SERVICE_INVOICE_KEY_CTResponse" />
+  </wsdl:message>
+  <wsdl:message name="Fs_SERVICE_INVOICE_KEY_CT_XMLSoapIn">
+    <wsdl:part name="parameters" element="tns:Fs_SERVICE_INVOICE_KEY_CT_XML" />
+  </wsdl:message>
+  <wsdl:message name="Fs_SERVICE_INVOICE_KEY_CT_XMLSoapOut">
+    <wsdl:part name="parameters" element="tns:Fs_SERVICE_INVOICE_KEY_CT_XMLResponse" />
+  </wsdl:message>
+  <wsdl:message name="Fs_SERVICE_IMPORT_DENSOSoapIn">
+    <wsdl:part name="parameters" element="tns:Fs_SERVICE_IMPORT_DENSO" />
+  </wsdl:message>
+  <wsdl:message name="Fs_SERVICE_IMPORT_DENSOSoapOut">
+    <wsdl:part name="parameters" element="tns:Fs_SERVICE_IMPORT_DENSOResponse" />
+  </wsdl:message>
+  <wsdl:message name="Fs_LoadListMauSoapIn">
+    <wsdl:part name="parameters" element="tns:Fs_LoadListMau" />
+  </wsdl:message>
+  <wsdl:message name="Fs_LoadListMauSoapOut">
+    <wsdl:part name="parameters" element="tns:Fs_LoadListMauResponse" />
+  </wsdl:message>
+  <wsdl:message name="Fs_LoadListSeriSoapIn">
+    <wsdl:part name="parameters" element="tns:Fs_LoadListSeri" />
+  </wsdl:message>
+  <wsdl:message name="Fs_LoadListSeriSoapOut">
+    <wsdl:part name="parameters" element="tns:Fs_LoadListSeriResponse" />
+  </wsdl:message>
+  <wsdl:message name="Fs_SERVICE_KY_SERVERSoapIn">
+    <wsdl:part name="parameters" element="tns:Fs_SERVICE_KY_SERVER" />
+  </wsdl:message>
+  <wsdl:message name="Fs_SERVICE_KY_SERVERSoapOut">
+    <wsdl:part name="parameters" element="tns:Fs_SERVICE_KY_SERVERResponse" />
+  </wsdl:message>
+  <wsdl:message name="Fs_SERVICE_KY_MUTIL_SERVERSoapIn">
+    <wsdl:part name="parameters" element="tns:Fs_SERVICE_KY_MUTIL_SERVER" />
+  </wsdl:message>
+  <wsdl:message name="Fs_SERVICE_KY_MUTIL_SERVERSoapOut">
+    <wsdl:part name="parameters" element="tns:Fs_SERVICE_KY_MUTIL_SERVERResponse" />
+  </wsdl:message>
+  <wsdl:message name="Fs_DN_CTSoapIn">
+    <wsdl:part name="parameters" element="tns:Fs_DN_CT" />
+  </wsdl:message>
+  <wsdl:message name="Fs_DN_CTSoapOut">
+    <wsdl:part name="parameters" element="tns:Fs_DN_CTResponse" />
+  </wsdl:message>
+  <wsdl:message name="TOOL_SENDMAILSoapIn">
+    <wsdl:part name="parameters" element="tns:TOOL_SENDMAIL" />
+  </wsdl:message>
+  <wsdl:message name="TOOL_SENDMAILSoapOut">
+    <wsdl:part name="parameters" element="tns:TOOL_SENDMAILResponse" />
+  </wsdl:message>
+  <wsdl:portType name="service_ketnoiSoap">
+    <wsdl:operation name="Fs_SERVICE_HD_NH">
+      <wsdl:input message="tns:Fs_SERVICE_HD_NHSoapIn" />
+      <wsdl:output message="tns:Fs_SERVICE_HD_NHSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Fs_IV_MAP_NH">
+      <wsdl:input message="tns:Fs_IV_MAP_NHSoapIn" />
+      <wsdl:output message="tns:Fs_IV_MAP_NHSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Fs_SERVICE_NH_KY">
+      <wsdl:input message="tns:Fs_SERVICE_NH_KYSoapIn" />
+      <wsdl:output message="tns:Fs_SERVICE_NH_KYSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Fs_SERVICE_NH">
+      <wsdl:input message="tns:Fs_SERVICE_NHSoapIn" />
+      <wsdl:output message="tns:Fs_SERVICE_NHSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Fs_SERVICE_INVOICE_NH">
+      <wsdl:input message="tns:Fs_SERVICE_INVOICE_NHSoapIn" />
+      <wsdl:output message="tns:Fs_SERVICE_INVOICE_NHSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Fs_SERVICE_INVOICE_MUTI_NH">
+      <wsdl:input message="tns:Fs_SERVICE_INVOICE_MUTI_NHSoapIn" />
+      <wsdl:output message="tns:Fs_SERVICE_INVOICE_MUTI_NHSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Fs_SERVICE_INVOICE_IN">
+      <wsdl:input message="tns:Fs_SERVICE_INVOICE_INSoapIn" />
+      <wsdl:output message="tns:Fs_SERVICE_INVOICE_INSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Fs_SERVICE_INVOICE_IN_FKEY">
+      <wsdl:input message="tns:Fs_SERVICE_INVOICE_IN_FKEYSoapIn" />
+      <wsdl:output message="tns:Fs_SERVICE_INVOICE_IN_FKEYSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Fs_SERVICE_INVOICE_HUY">
+      <wsdl:input message="tns:Fs_SERVICE_INVOICE_HUYSoapIn" />
+      <wsdl:output message="tns:Fs_SERVICE_INVOICE_HUYSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Fs_SERVICE_INVOICE_HUY_FKEY">
+      <wsdl:input message="tns:Fs_SERVICE_INVOICE_HUY_FKEYSoapIn" />
+      <wsdl:output message="tns:Fs_SERVICE_INVOICE_HUY_FKEYSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Fs_SERVICE_INVOICE_CT">
+      <wsdl:input message="tns:Fs_SERVICE_INVOICE_CTSoapIn" />
+      <wsdl:output message="tns:Fs_SERVICE_INVOICE_CTSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Fs_USER_TT">
+      <wsdl:input message="tns:Fs_USER_TTSoapIn" />
+      <wsdl:output message="tns:Fs_USER_TTSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Fs_IV_MA_FKEY">
+      <wsdl:input message="tns:Fs_IV_MA_FKEYSoapIn" />
+      <wsdl:output message="tns:Fs_IV_MA_FKEYSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Fs_SERVICE_INVOICE_KEY_CT">
+      <wsdl:input message="tns:Fs_SERVICE_INVOICE_KEY_CTSoapIn" />
+      <wsdl:output message="tns:Fs_SERVICE_INVOICE_KEY_CTSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Fs_SERVICE_INVOICE_KEY_CT_XML">
+      <wsdl:input message="tns:Fs_SERVICE_INVOICE_KEY_CT_XMLSoapIn" />
+      <wsdl:output message="tns:Fs_SERVICE_INVOICE_KEY_CT_XMLSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Fs_SERVICE_IMPORT_DENSO">
+      <wsdl:input message="tns:Fs_SERVICE_IMPORT_DENSOSoapIn" />
+      <wsdl:output message="tns:Fs_SERVICE_IMPORT_DENSOSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Fs_LoadListMau">
+      <wsdl:input message="tns:Fs_LoadListMauSoapIn" />
+      <wsdl:output message="tns:Fs_LoadListMauSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Fs_LoadListSeri">
+      <wsdl:input message="tns:Fs_LoadListSeriSoapIn" />
+      <wsdl:output message="tns:Fs_LoadListSeriSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Fs_SERVICE_KY_SERVER">
+      <wsdl:input message="tns:Fs_SERVICE_KY_SERVERSoapIn" />
+      <wsdl:output message="tns:Fs_SERVICE_KY_SERVERSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Fs_SERVICE_KY_MUTIL_SERVER">
+      <wsdl:input message="tns:Fs_SERVICE_KY_MUTIL_SERVERSoapIn" />
+      <wsdl:output message="tns:Fs_SERVICE_KY_MUTIL_SERVERSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Fs_DN_CT">
+      <wsdl:input message="tns:Fs_DN_CTSoapIn" />
+      <wsdl:output message="tns:Fs_DN_CTSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TOOL_SENDMAIL">
+      <wsdl:input message="tns:TOOL_SENDMAILSoapIn" />
+      <wsdl:output message="tns:TOOL_SENDMAILSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="service_ketnoiSoap" type="tns:service_ketnoiSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Fs_SERVICE_HD_NH">
+      <soap:operation soapAction="http://tempuri.org/Fs_SERVICE_HD_NH" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Fs_IV_MAP_NH">
+      <soap:operation soapAction="http://tempuri.org/Fs_IV_MAP_NH" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Fs_SERVICE_NH_KY">
+      <soap:operation soapAction="http://tempuri.org/Fs_SERVICE_NH_KY" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Fs_SERVICE_NH">
+      <soap:operation soapAction="http://tempuri.org/Fs_SERVICE_NH" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Fs_SERVICE_INVOICE_NH">
+      <soap:operation soapAction="http://tempuri.org/Fs_SERVICE_INVOICE_NH" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Fs_SERVICE_INVOICE_MUTI_NH">
+      <soap:operation soapAction="http://tempuri.org/Fs_SERVICE_INVOICE_MUTI_NH" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Fs_SERVICE_INVOICE_IN">
+      <soap:operation soapAction="http://tempuri.org/Fs_SERVICE_INVOICE_IN" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Fs_SERVICE_INVOICE_IN_FKEY">
+      <soap:operation soapAction="http://tempuri.org/Fs_SERVICE_INVOICE_IN_FKEY" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Fs_SERVICE_INVOICE_HUY">
+      <soap:operation soapAction="http://tempuri.org/Fs_SERVICE_INVOICE_HUY" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Fs_SERVICE_INVOICE_HUY_FKEY">
+      <soap:operation soapAction="http://tempuri.org/Fs_SERVICE_INVOICE_HUY_FKEY" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Fs_SERVICE_INVOICE_CT">
+      <soap:operation soapAction="http://tempuri.org/Fs_SERVICE_INVOICE_CT" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Fs_USER_TT">
+      <soap:operation soapAction="http://tempuri.org/Fs_USER_TT" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Fs_IV_MA_FKEY">
+      <soap:operation soapAction="http://tempuri.org/Fs_IV_MA_FKEY" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Fs_SERVICE_INVOICE_KEY_CT">
+      <soap:operation soapAction="http://tempuri.org/Fs_SERVICE_INVOICE_KEY_CT" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Fs_SERVICE_INVOICE_KEY_CT_XML">
+      <soap:operation soapAction="http://tempuri.org/Fs_SERVICE_INVOICE_KEY_CT_XML" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Fs_SERVICE_IMPORT_DENSO">
+      <soap:operation soapAction="http://tempuri.org/Fs_SERVICE_IMPORT_DENSO" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Fs_LoadListMau">
+      <soap:operation soapAction="http://tempuri.org/Fs_LoadListMau" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Fs_LoadListSeri">
+      <soap:operation soapAction="http://tempuri.org/Fs_LoadListSeri" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Fs_SERVICE_KY_SERVER">
+      <soap:operation soapAction="http://tempuri.org/Fs_SERVICE_KY_SERVER" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Fs_SERVICE_KY_MUTIL_SERVER">
+      <soap:operation soapAction="http://tempuri.org/Fs_SERVICE_KY_MUTIL_SERVER" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Fs_DN_CT">
+      <soap:operation soapAction="http://tempuri.org/Fs_DN_CT" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TOOL_SENDMAIL">
+      <soap:operation soapAction="http://tempuri.org/TOOL_SENDMAIL" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="service_ketnoiSoap12" type="tns:service_ketnoiSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Fs_SERVICE_HD_NH">
+      <soap12:operation soapAction="http://tempuri.org/Fs_SERVICE_HD_NH" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Fs_IV_MAP_NH">
+      <soap12:operation soapAction="http://tempuri.org/Fs_IV_MAP_NH" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Fs_SERVICE_NH_KY">
+      <soap12:operation soapAction="http://tempuri.org/Fs_SERVICE_NH_KY" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Fs_SERVICE_NH">
+      <soap12:operation soapAction="http://tempuri.org/Fs_SERVICE_NH" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Fs_SERVICE_INVOICE_NH">
+      <soap12:operation soapAction="http://tempuri.org/Fs_SERVICE_INVOICE_NH" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Fs_SERVICE_INVOICE_MUTI_NH">
+      <soap12:operation soapAction="http://tempuri.org/Fs_SERVICE_INVOICE_MUTI_NH" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Fs_SERVICE_INVOICE_IN">
+      <soap12:operation soapAction="http://tempuri.org/Fs_SERVICE_INVOICE_IN" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Fs_SERVICE_INVOICE_IN_FKEY">
+      <soap12:operation soapAction="http://tempuri.org/Fs_SERVICE_INVOICE_IN_FKEY" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Fs_SERVICE_INVOICE_HUY">
+      <soap12:operation soapAction="http://tempuri.org/Fs_SERVICE_INVOICE_HUY" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Fs_SERVICE_INVOICE_HUY_FKEY">
+      <soap12:operation soapAction="http://tempuri.org/Fs_SERVICE_INVOICE_HUY_FKEY" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Fs_SERVICE_INVOICE_CT">
+      <soap12:operation soapAction="http://tempuri.org/Fs_SERVICE_INVOICE_CT" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Fs_USER_TT">
+      <soap12:operation soapAction="http://tempuri.org/Fs_USER_TT" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Fs_IV_MA_FKEY">
+      <soap12:operation soapAction="http://tempuri.org/Fs_IV_MA_FKEY" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Fs_SERVICE_INVOICE_KEY_CT">
+      <soap12:operation soapAction="http://tempuri.org/Fs_SERVICE_INVOICE_KEY_CT" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Fs_SERVICE_INVOICE_KEY_CT_XML">
+      <soap12:operation soapAction="http://tempuri.org/Fs_SERVICE_INVOICE_KEY_CT_XML" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Fs_SERVICE_IMPORT_DENSO">
+      <soap12:operation soapAction="http://tempuri.org/Fs_SERVICE_IMPORT_DENSO" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Fs_LoadListMau">
+      <soap12:operation soapAction="http://tempuri.org/Fs_LoadListMau" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Fs_LoadListSeri">
+      <soap12:operation soapAction="http://tempuri.org/Fs_LoadListSeri" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Fs_SERVICE_KY_SERVER">
+      <soap12:operation soapAction="http://tempuri.org/Fs_SERVICE_KY_SERVER" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Fs_SERVICE_KY_MUTIL_SERVER">
+      <soap12:operation soapAction="http://tempuri.org/Fs_SERVICE_KY_MUTIL_SERVER" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Fs_DN_CT">
+      <soap12:operation soapAction="http://tempuri.org/Fs_DN_CT" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TOOL_SENDMAIL">
+      <soap12:operation soapAction="http://tempuri.org/TOOL_SENDMAIL" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="service_ketnoi">
+    <wsdl:port name="service_ketnoiSoap" binding="tns:service_ketnoiSoap">
+      <soap:address location="http://hoadon.doji.vn/Service/iv_v/service_ketnoi.asmx" />
+    </wsdl:port>
+    <wsdl:port name="service_ketnoiSoap12" binding="tns:service_ketnoiSoap12">
+      <soap12:address location="http://hoadon.doji.vn/Service/iv_v/service_ketnoi.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

@@ -1,0 +1,45 @@
+D:\CMC-TS\Tool-Ccontract\AppTestService\obj\Debug\ToolDoji-cinvoice.csproj.AssemblyReference.cache
+D:\CMC-TS\Tool-Ccontract\AppTestService\obj\Debug\SolomonInvoice.Form1.resources
+D:\CMC-TS\Tool-Ccontract\AppTestService\obj\Debug\Solomon_Invoice.Properties.Resources.resources
+D:\CMC-TS\Tool-Ccontract\AppTestService\obj\Debug\ToolDoji-cinvoice.csproj.GenerateResource.cache
+D:\CMC-TS\Tool-Ccontract\AppTestService\obj\Debug\ToolDoji-cinvoice.csproj.CoreCompileInputs.cache
+D:\CMC-TS\Tool-Ccontract\AppTestService\bin\Debug\Solomon_Invoice.exe.config
+D:\CMC-TS\Tool-Ccontract\AppTestService\bin\Debug\Solomon_Invoice.exe
+D:\CMC-TS\Tool-Ccontract\AppTestService\bin\Debug\Solomon_Invoice.pdb
+D:\CMC-TS\Tool-Ccontract\AppTestService\bin\Debug\RestSharp.dll
+D:\CMC-TS\Tool-Ccontract\AppTestService\bin\Debug\RestSharp.xml
+D:\CMC-TS\Tool-Ccontract\AppTestService\obj\Debug\ToolDoji-cinvoice.csproj.CopyComplete
+D:\CMC-TS\Tool-Ccontract\AppTestService\obj\Debug\Solomon_Invoice.exe
+D:\CMC-TS\Tool-Ccontract\AppTestService\obj\Debug\Solomon_Invoice.pdb
+D:\CMC-TS\Tool-Ccontract\AppTestService\bin\Debug\Newtonsoft.Json.dll
+D:\CMC-TS\Tool-Ccontract\AppTestService\bin\Debug\Newtonsoft.Json.xml
+D:\CMC-TS\Tool-Ccontract - Copy\AppTestService\bin\Debug\Solomon_Invoice.exe.config
+D:\CMC-TS\Tool-Ccontract - Copy\AppTestService\bin\Debug\Solomon_Invoice.exe
+D:\CMC-TS\Tool-Ccontract - Copy\AppTestService\bin\Debug\Solomon_Invoice.pdb
+D:\CMC-TS\Tool-Ccontract - Copy\AppTestService\bin\Debug\Newtonsoft.Json.dll
+D:\CMC-TS\Tool-Ccontract - Copy\AppTestService\bin\Debug\RestSharp.dll
+D:\CMC-TS\Tool-Ccontract - Copy\AppTestService\bin\Debug\Newtonsoft.Json.xml
+D:\CMC-TS\Tool-Ccontract - Copy\AppTestService\bin\Debug\RestSharp.xml
+D:\CMC-TS\Tool-Ccontract - Copy\AppTestService\obj\Debug\ToolDoji-cinvoice.csproj.AssemblyReference.cache
+D:\CMC-TS\Tool-Ccontract - Copy\AppTestService\obj\Debug\SolomonInvoice.Form1.resources
+D:\CMC-TS\Tool-Ccontract - Copy\AppTestService\obj\Debug\Solomon_Invoice.Properties.Resources.resources
+D:\CMC-TS\Tool-Ccontract - Copy\AppTestService\obj\Debug\ToolDoji-cinvoice.csproj.GenerateResource.cache
+D:\CMC-TS\Tool-Ccontract - Copy\AppTestService\obj\Debug\ToolDoji-cinvoice.csproj.CoreCompileInputs.cache
+D:\CMC-TS\Tool-Ccontract - Copy\AppTestService\obj\Debug\ToolDoji-cinvoice.csproj.CopyComplete
+D:\CMC-TS\Tool-Ccontract - Copy\AppTestService\obj\Debug\Solomon_Invoice.exe
+D:\CMC-TS\Tool-Ccontract - Copy\AppTestService\obj\Debug\Solomon_Invoice.pdb
+D:\CTS_CONTRACT\TOOL\Tool-Ccontract\AppTestService\bin\Debug\Solomon_Invoice.exe.config
+D:\CTS_CONTRACT\TOOL\Tool-Ccontract\AppTestService\bin\Debug\Solomon_Invoice.exe
+D:\CTS_CONTRACT\TOOL\Tool-Ccontract\AppTestService\bin\Debug\Solomon_Invoice.pdb
+D:\CTS_CONTRACT\TOOL\Tool-Ccontract\AppTestService\bin\Debug\Newtonsoft.Json.dll
+D:\CTS_CONTRACT\TOOL\Tool-Ccontract\AppTestService\bin\Debug\RestSharp.dll
+D:\CTS_CONTRACT\TOOL\Tool-Ccontract\AppTestService\bin\Debug\Newtonsoft.Json.xml
+D:\CTS_CONTRACT\TOOL\Tool-Ccontract\AppTestService\bin\Debug\RestSharp.xml
+D:\CTS_CONTRACT\TOOL\Tool-Ccontract\AppTestService\obj\Debug\ToolDoji-cinvoice.csproj.AssemblyReference.cache
+D:\CTS_CONTRACT\TOOL\Tool-Ccontract\AppTestService\obj\Debug\SolomonInvoice.Form1.resources
+D:\CTS_CONTRACT\TOOL\Tool-Ccontract\AppTestService\obj\Debug\Solomon_Invoice.Properties.Resources.resources
+D:\CTS_CONTRACT\TOOL\Tool-Ccontract\AppTestService\obj\Debug\ToolDoji-cinvoice.csproj.GenerateResource.cache
+D:\CTS_CONTRACT\TOOL\Tool-Ccontract\AppTestService\obj\Debug\ToolDoji-cinvoice.csproj.CoreCompileInputs.cache
+D:\CTS_CONTRACT\TOOL\Tool-Ccontract\AppTestService\obj\Debug\ToolDoji-cinvoice.csproj.CopyComplete
+D:\CTS_CONTRACT\TOOL\Tool-Ccontract\AppTestService\obj\Debug\Solomon_Invoice.exe
+D:\CTS_CONTRACT\TOOL\Tool-Ccontract\AppTestService\obj\Debug\Solomon_Invoice.pdb

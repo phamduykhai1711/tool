@@ -1,0 +1,12 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="Solomon_Invoice.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="Solomon_Invoice_service_hoadon_service_ketnoi" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://hoadon.doji.vn/Service/iv_v/service_ketnoi.asmx</Value>
+    </Setting>
+    <Setting Name="ConnectionString" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">server=1.53.252.95;database=HDDT;uid=sa;pwd=doji@654321!@#</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
